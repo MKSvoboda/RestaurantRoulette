@@ -1,5 +1,9 @@
 Restaurace,Veganská,Sezení
-Restaurant1,Yes,Yes
-Restaurant2,No,Yes
-Restaurant3,Yes,No
-Restaurant4,No,No
+Puzzle Salads,Yes,No
+Hurry Curry,Yes,Yes
+Ryba,No,No
+Vnitroblock,Yes,Yes
+Jídelna,Yes,No
+Vietnam bufet, Yes,No
+Eatery,Yes,Yes
+Home kitchen,Yes,yes
