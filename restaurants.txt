@@ -3,7 +3,7 @@ Puzzle Salads,Yes,No
 Hurry Curry,Yes,Yes
 Ryba,No,No
 Vnitroblock,Yes,Yes
-Jídelna,Yes,No
+Jídelna,No,No
 Vietnam bufet, Yes,No
 Eatery,Yes,Yes
 Home kitchen,Yes,Yes
