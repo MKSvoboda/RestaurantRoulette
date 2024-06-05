@@ -13,7 +13,7 @@ def load_data():
 data = load_data()
 
 # Sidebar filters
-st.sidebar.title("Filter Options")
+st.sidebar.title("Možnosti")
 vegan_filter = st.sidebar.checkbox('Vegan', value=False)
 eat_in_filter = st.sidebar.checkbox('Možnost sezení', value=False)
 
@@ -26,7 +26,7 @@ if eat_in_filter:
 
 # Main interface
 st.title("Obědová ruleta")
-st.write("Select your filters and click the button to pick a random restaurant.")
+st.write("Zvol kritéria a vylosuj podnik na oběd")
 
 # Animation and result display
 result_placeholder = st.empty()
