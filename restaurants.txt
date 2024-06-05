@@ -1,0 +1,5 @@
+Restaurace,Veganská,Sezení
+Restaurant1,Yes,Yes
+Restaurant2,No,Yes
+Restaurant3,Yes,No
+Restaurant4,No,No
