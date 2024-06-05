@@ -6,4 +6,7 @@ Vnitroblock,Yes,Yes
 Jídelna,Yes,No
 Vietnam bufet, Yes,No
 Eatery,Yes,Yes
-Home kitchen,Yes,yes
+Home kitchen,Yes,Yes
+Cà phê,Yes,Yes
+Lasagneria,Yes,Yes
+
