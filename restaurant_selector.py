@@ -40,7 +40,7 @@ if button_clicked:
         for _ in range(10):  # Number of spins
             selected_restaurant = random.choice(filtered_data['Restaurace'].tolist())
             result_placeholder.markdown(f"### How about: **{selected_restaurant}**")
-            time.sleep(0.1)  # Adjust the speed of the animation
+            time.sleep(0.5)  # Adjust the speed of the animation
 
         # Final result
         selected_restaurant = random.choice(filtered_data['Restaurace'].tolist())
@@ -53,6 +53,12 @@ if button_clicked:
 # Show the filtered list (optional)
 if st.checkbox('Show filtered restaurant list'):
     st.write(filtered_data)
+
+# Link to restaurants.txt
+st.markdown("""
+    ---
+    For more information, you can check the [restaurants.txt](https://github.com/MKSvoboda/RestaurantRoulette/blob/main/restaurants.txt) file.
+    """)
 
 # General styling
 st.markdown("""
