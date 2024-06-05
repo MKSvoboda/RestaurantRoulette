@@ -39,7 +39,7 @@ if button_clicked:
         # Animation effect
         for _ in range(10):  # Number of spins
             selected_restaurant = random.choice(filtered_data['Restaurace'].tolist())
-            result_placeholder.markdown(f"### How about: **{selected_restaurant}**")
+            result_placeholder.markdown(f"### Co třeba: **{selected_restaurant}**")
             time.sleep(0.5)  # Adjust the speed of the animation
 
         # Final result
