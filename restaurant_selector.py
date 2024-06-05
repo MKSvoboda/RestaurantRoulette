@@ -36,20 +36,19 @@ if button_clicked:
     if filtered_data.empty:
         st.write("Nebyl nalezen vyhovující podnik.")
     else:
-        # Animation effect
+        # Animation effect using the filtered list
         for _ in range(10):  # Number of spins
             selected_restaurant = random.choice(filtered_data['Restaurace'].tolist())
             result_placeholder.markdown(f"### Co třeba: **{selected_restaurant}**")
             time.sleep(0.5)  # Adjust the speed of the animation
 
-        # Final result
+        # Final result using the filtered list
         selected_restaurant = random.choice(filtered_data['Restaurace'].tolist())
         result_placeholder.markdown(f"""
         <div style="text-align: center;">
             <h1 style="color: #4CAF50; font-size: 3em;">{selected_restaurant}</h1>
         </div>
         """, unsafe_allow_html=True)
-
 
 # Link to restaurants.txt
 st.markdown("""
