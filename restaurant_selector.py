@@ -5,7 +5,7 @@ import random
 # Function to load data from GitHub
 @st.cache
 def load_data():
-    url = 'https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO/main/restaurants.txt'
+    url = 'https://raw.githubusercontent.com/MKSvoboda/RestaurantRoulette/main/restaurants.txt'
     return pd.read_csv(url, sep=',')  # Adjust the separator if needed
 
 # Load the restaurant data
