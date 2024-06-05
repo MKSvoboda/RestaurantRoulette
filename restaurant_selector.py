@@ -14,8 +14,8 @@ data = load_data()
 
 # Sidebar filters
 st.sidebar.title("Filter Options")
-vegan_filter = st.sidebar.checkbox('Show only vegan restaurants', value=False)
-eat_in_filter = st.sidebar.checkbox('Show only restaurants with seating', value=False)
+vegan_filter = st.sidebar.checkbox('Vegan', value=False)
+eat_in_filter = st.sidebar.checkbox('Možnost sezení', value=False)
 
 # Apply filters to the data
 filtered_data = data.copy()
@@ -25,16 +25,16 @@ if eat_in_filter:
     filtered_data = filtered_data[filtered_data['Sezení'] == 'Yes']
 
 # Main interface
-st.title("Restaurant Selector")
+st.title("Obědová ruleta")
 st.write("Select your filters and click the button to pick a random restaurant.")
 
 # Animation and result display
 result_placeholder = st.empty()
-button_clicked = st.button('Pick a Random Restaurant')
+button_clicked = st.button('Vybrat podnik:')
 
 if button_clicked:
     if filtered_data.empty:
-        st.write("No restaurants match your criteria.")
+        st.write("Nebyl nalezen vyhovující podnik.")
     else:
         # Animation effect
         for _ in range(10):  # Number of spins
@@ -50,14 +50,11 @@ if button_clicked:
         </div>
         """, unsafe_allow_html=True)
 
-# Show the filtered list (optional)
-if st.checkbox('Show filtered restaurant list'):
-    st.write(filtered_data)
 
 # Link to restaurants.txt
 st.markdown("""
     ---
-    For more information, you can check the [restaurants.txt](https://github.com/MKSvoboda/RestaurantRoulette/blob/main/restaurants.txt) file.
+    Seznam restaurací: [restaurants.txt](https://github.com/MKSvoboda/RestaurantRoulette/blob/main/restaurants.txt)
     """)
 
 # General styling
