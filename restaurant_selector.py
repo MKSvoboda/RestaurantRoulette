@@ -14,8 +14,8 @@ data = load_data()
 
 # Sidebar filters
 st.sidebar.title("Možnosti")
-vegan_filter = st.sidebar.checkbox('Vegan', value=False)
-eat_in_filter = st.sidebar.checkbox('Možnost sezení', value=False)
+vegan_filter = st.sidebar.checkbox('Vegan friendly', value=False)
+eat_in_filter = st.sidebar.checkbox('Vhodné k sezení', value=False)
 
 # Apply filters to the data
 filtered_data = data.copy()
