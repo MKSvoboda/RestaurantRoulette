@@ -4,9 +4,10 @@ Hurry Curry,Yes,Yes
 Ryba,No,No
 Vnitroblock,Yes,Yes
 Jídelna,No,No
-Vietnam bufet, Yes,No
+Zau, Yes,No
 Eatery,Yes,Yes
 Home kitchen,Yes,Yes
 Cà phê,Yes,Yes
 Lasagneria,Yes,Yes
+Osada,Yes,No
 
